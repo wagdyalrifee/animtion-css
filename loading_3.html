@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        body {
+            background-color: #202020;
+        }
+
+        .load {
+            display: flex;
+            justify-content: center;
+            margin: 150px auto;
+        }
+        .load div {
+            background-image: linear-gradient(to right, red,pink);
+            width: 30px;
+            height: 30px;
+            margin: 20px 10px;
+            border-radius: 50%;
+            animation: up-to-down  1.5s infinite ease-out alternate;
+        }
+        
+
+        /*
+        /*/
+        .load .two {
+            animation-delay: .3s;
+            
+        }
+
+        .load .three {
+            animation-delay: .5s;
+        }
+
+        .load .four {
+            animation-delay: .6s;
+            height: 40px;
+            width: 40px;
+        }
+
+        .load .five {
+            animation-delay: .7s;
+            height: 35px;
+            width: 35px;
+        }
+
+        .load .six {
+            animation-delay: .9s;
+            height: 30px;
+            width: 30px;
+        }
+
+        @keyframes up-to-down {
+            
+            0%{
+                opacity: 0;
+                transform: scale(6,6);
+            }
+
+            20%{
+                opacity: 0;
+            }
+            
+            100% {
+                opacity: .7;
+            }
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading > 2 <</title>
+</head>
+<body>
+    <div class="load">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+
+    </div>
+</body>
+</html>

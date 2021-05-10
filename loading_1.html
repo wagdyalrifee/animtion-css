@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        body {
+            background-color: #202020;
+        }
+        div {
+            width: 50px;
+            height: 50px;
+            margin: 10px auto;
+            border-radius: 50%;
+            background-image: linear-gradient(to right, red,pink);
+            animation: up-to-down .9s ease infinite; 
+            animation-direction: alternate;
+            transform: translate(-100px);
+        }
+
+        @keyframes up-to-down {
+            0% {
+                transform: translate(100px);
+                transform: scale3d(-3,-1,21);
+                opacity: .5;
+            }
+            
+            100% {
+                opacity: .9;
+            }
+        }
+
+        div:first-child {
+            margin-top: 150px;
+        }
+        /*
+        transform: translate(50px);
+        
+        div:lest-child {
+            transform: translate(80px);
+        }
+
+        div:nth-child(obb){
+            transform: translate(50px);
+        }
+
+        div:nth-child(even){
+            transform: translate(-50px);
+        }
+            */
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading > 1 < </title>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
